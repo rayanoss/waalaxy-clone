@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E7F8FF;
+}
+
+p{
+    font-family: 'DM Sans';
+}
+
+.btn{
+    background: linear-gradient(39deg,rgb(52,217,177) 14%,rgb(75,70,228) 48%,rgb(0,50,180) 81%,rgb(82,155,224) 106%)!important;
+    color: white;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h6{
+    color: rgb(27,27,27);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.home-header{
+    background: #E7F8FF;
+    height: 100vh;
+    position: relative;
+}
+
+.header-nav{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 65%;
+    justify-content: space-between;
+    left: 50%;
+    top: 3%;
+    transform: translate(-50%);
+}
+
+.header-nav img{
+    object-fit: contain;
+    width: 150px;
+}
+
+.btn.nav{
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 15%);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.link{
+    font-family: "DM Sans";
+    color: rgb(49,90,231);
+    margin: 0px 15px; 
+    font-size: 18px;
+}
+
+.header-svg{
+    background: #d9efff;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.header-svg svg{
+    position: absolute;
+    bottom: -65%;
+}
+
+.header-text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h1{
+    font-size: 55px;
+    color: rgb(27,27,27);
+}
+
+.header-text p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(27,27,27);
+    width: 70%;
+    max-width: 672px;
+}
+
+.header-text button{
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+.customers-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    margin: 0px 30px;
+    object-fit: contain;
+    width: 100px;
+}
+
+.card{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #00000025;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.card img{
+    width: 30px;
+    object-fit: contain;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.stars{
+    font-size: 18px;
+    color: #ffd401;
+}
+
+.review-text{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+}
+
+.review-text p{
+    width: auto;
+}
+
+.review-text p:nth-child(2){
+    margin-left: 5px;
+}
+
+.landing{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;   
+}
+
+.landing h4{
+    line-height: 1.41em;
+    font-size: 52px;
+    width: 44%;
+    max-width: 502px
+}
+
+.landing img{
+    height: 500px;
+    width: 56%;
+    object-fit: contain;
+}
+
+.landing.two{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.landing.two img{
+    width: 42%;
+}
+
+.landing.three h4{
+    font-size: 52px;
+    width: 50%;
+    max-width: 571px;
+}
+
+.landing.three img{
+    width: 50%;
+}
+
+.blackbg{
+    position: relative;
+    background: linear-gradient(rgb(4,4,4),rgb(4,4,4));
+    color: white;
+    height: 440px;
+}
+
+.suitable-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.suitable-container ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.suitable-container li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 25px;
+    width: 12%;
+    text-align: center;
+}
+.suitable-container h6{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.suitable-container li img{
+    
+    width: 80px;
+}
+
+.suitable-container p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    min-height: 600px;
+    padding: 50px;
+    border-radius: 15px;
+    z-index: 5;
+    height: auto;
+}
+
+.card-price img{
+    width: 100px;
+    object-fit: contain;
+}
+
+.card-price h6{
+    font-size: 22px;
+}
+
+.card-price a{
+    color: rgb(71,181,235)!important;
+    font-family: 'DM Sans';
+    font-size: 11px;
+}
+
+.price-text{
+    color: rgb(69,178,232) !important;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.btn.price{
+    background: rgb(134,205,240) !important;
+    font-size: 18px;
+    padding: 10px 100px;
+    border-radius: 10px;
+}
+
+.container-price{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.container-price h4{
+    font-size: 52px;
+    width: 45%;
+    max-width: 560px;
+}
+
+.avantages p{
+    margin-top: 30px;
+}
+
+.header-section{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro{
+    color: rgb(49, 90, 231) !important;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 52px;
+}
+
+.stars-review-section{
+    font-size: 30px;
+    color: #ffd401;
+    margin-top: 20px;
+}
+
+.google-review{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.header-section a{
+    font-family: "DM Sans";
+    color: rgb(49, 90, 231) !important;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.header-review{
+    display: flex;
+    align-items: center;
+}
+
+.header-review img{
+    width: 70px;
+    background: #B8E2F6;
+    border-radius: 50%;
+}
+
+.text{
+    margin-left: 15px;
+}
+.name{
+    font-weight: 600;
+}
+
+.job{
+    color: rgb(174,174,174) !important;
+}
+
+.review-item{
+    margin: 50px 15px;
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    z-index: 1;
+    box-shadow: 0px 0px 7px #00000025;
+}
+
+.review-text{
+    line-height: 1.5em;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.review-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 15px;
+    position: relative;
+}
+
+.review-list::after{
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgba(234,248,255,0.8),rgba(234,248,255,0.8)) !important;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.review-list:nth-child(n+1){
+    margin: 0px auto;
+}
+
+.review-list:nth-child(n+1)::after{
+    height: 104%;
+}
+
+.tuto-section{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tuto-section img{
+    width: 350px;
+    object-fit: contain;
+}
+
+.items{
+    display: flex;
+}
+.item{
+    margin: 50px 30px;
+    
+}
+
+.item p{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.faq-section{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.questions-list{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.question{
+    font-size: 18px;
+    display: flex;
+    width: 45%;
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.question i{
+    position: absolute;
+    right: 0%;
+    color: rgb(90,86,233) !important;
+    transition: all 0.5s ease;
+}
+
+.question:hover{
+    color: rgb(90,86,233) !important;
+}
+
+.question:hover > i {
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.message-faq{
+    display: block;
+    width: 440px;
+    font-size: 15px;
+    margin-top: 15px;
+}
